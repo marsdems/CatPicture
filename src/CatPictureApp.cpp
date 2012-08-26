@@ -1,3 +1,9 @@
+/**********************************************************
+* Mike Marsden
+* Dr. Brinkman
+* CSE274
+* 8.26.2012
+**********************************************************/
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 
@@ -20,6 +26,7 @@ class CatPictureApp : public AppBasic {
 
 void CatPictureApp::setup()
 {
+	//Red, green, blue values are set initially to be different
 	rValue = 0.0f;
 	gValue = 0.5f;
 	bValue = 1.0f;
@@ -31,6 +38,7 @@ void CatPictureApp::mouseDown( MouseEvent event )
 
 void CatPictureApp::update()
 {
+	// RGB values increment at different rates
 	rValue = rValue + 0.01f;
 	gValue = gValue + 0.02f;
 	bValue = bValue + 0.03f;
