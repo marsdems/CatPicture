@@ -47,8 +47,8 @@ void CatPictureApp::update()
 
 void CatPictureApp::draw()
 {
-	// clear out the window with black
-	gl::clear( Color( rValue, bValue, gValue) ); 
+	// clear out the window with random values
+	gl::clear( Color( rValue, gValue, bValue) ); 
 }
 
 CINDER_APP_BASIC( CatPictureApp, RendererGl )
